@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amulya Rani | Aspiring Data Analyst</title>
+<meta name="description" content="Portfolio of Amulya Rani, final-year B.Tech CSE student at KHIT College. Data Analytics, AI and IT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090a1a;--bg2:#0f1130;--card:rgba(255,255,255,.055);--bd:rgba(255,255,255,.11);--tx:#eceeff;--mut:#a0a6cc;--a:#62a4ff;--b:#a866ff;--grad:linear-gradient(120deg,var(--a),var(--b));--glow:rgba(120,120,255,.28);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+:root[data-theme="light"]{--bg:#f5f6ff;--bg2:#e9ebff;--card:rgba(255,255,255,.75);--bd:rgba(60,60,140,.16);--tx:#171a3a;--mut:#555b85;--a:#2f6fe0;--b:#7b3fe4;--glow:rgba(100,100,255,.18);color-scheme:light}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1rem/1.65 'DM Sans',system-ui,sans-serif;overflow-x:hidden;transition:background .3s,color .3s}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 420px at 12% 8%,var(--glow),transparent 70%),radial-gradient(700px 500px at 90% 30%,rgba(168,102,255,.16),transparent 70%),linear-gradient(var(--bg),var(--bg2));animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{to{filter:hue-rotate(25deg);transform:scale(1.06)}}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.2;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:88px 0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:8px}
+.sub{color:var(--mut);max-width:60ch;margin:0 0 36px}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--bd)}
+nav{display:flex;align-items:center;gap:16px;height:64px}
+.logo{font:800 1.1rem Sora,sans-serif;letter-spacing:.06em;text-decoration:none;margin-right:auto}
+nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+nav ul a{display:block;padding:8px 11px;border-radius:10px;text-decoration:none;color:var(--mut);font-size:.92rem;transition:.2s}
+nav ul a:hover{color:var(--tx);background:var(--card)}
+.ib{width:40px;height:40px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer;font-size:1.1rem;transition:.2s}
+.ib:hover{transform:translateY(-2px);box-shadow:0 6px 20px var(--glow)}
+#menu{display:none}
+@media(max-width:900px){#menu{display:block}nav ul{position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:10px 20px 16px;background:var(--bg);border-bottom:1px solid var(--bd);display:none}nav ul.open{display:flex}}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:700 .95rem 'DM Sans',sans-serif;text-decoration:none;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 28px var(--glow)}
+.btn.p{background:var(--grad);border-color:transparent;color:#fff}
+.btn.sm{padding:8px 14px;font-size:.86rem}
+/* cards */
+.card{position:relative;background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:transform .3s,border-color .3s;overflow:hidden}
+.card::after{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),var(--glow),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{transform:translateY(-5px);border-color:var(--a)}
+.card:hover::after{opacity:1}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.tag{display:inline-block;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:99px;background:rgba(98,164,255,.15);color:var(--a)}
+/* hero */
+#home{min-height:100svh;display:flex;align-items:center;padding-top:110px}
+.hero{display:grid;gap:40px;grid-template-columns:1.1fr .9fr;align-items:center}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.02em}
+.role{font:700 1.05rem Sora,sans-serif;margin:14px 0;color:var(--a)}
+.hero p{color:var(--mut);max-width:54ch}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:24px}
+.soc{width:46px;height:46px;display:grid;place-items:center;border-radius:12px;border:1px solid var(--bd);background:var(--card);transition:.25s}
+.soc:hover{transform:translateY(-3px) scale(1.06);box-shadow:0 8px 22px var(--glow)}
+.soc svg{width:22px;height:22px;fill:currentColor}
+.viz{position:relative;padding:26px 22px 16px}
+.viz svg{width:100%;height:auto;display:block;color:var(--tx)}
+.bar{fill:url(#g);transform-box:fill-box;transform-origin:bottom;animation:grow 1.2s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*.12s + .4s)}
+@keyframes grow{from{transform:scaleY(0)}}
+.ln{fill:none;stroke:#7ee7ff;stroke-width:3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:dr 2.2s 1.2s ease forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.dot{fill:#7ee7ff;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.chip{padding:7px 13px;border-radius:99px;border:1px solid var(--bd);background:var(--card);font-weight:700;font-size:.88rem;animation:fl 4s ease-in-out infinite;animation-delay:calc(var(--i)*-.8s)}
+@keyframes fl{50%{transform:translateY(-6px)}}
+/* about */
+.about{display:grid;gap:28px;grid-template-columns:1.2fr .8fr}
+@media(max-width:900px){.about{grid-template-columns:1fr}}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 16px}
+dt{color:var(--mut)}dd{margin:0;font-weight:500}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--bd)}
+.tl li{position:relative;padding:0 0 18px 6px;font-weight:500}
+.tl li::before{content:"";position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--grad);box-shadow:0 0 12px var(--a)}
+.tl li:last-child{padding-bottom:0}
+/* skills */
+.skill{cursor:default}
+.skill .ic{font-size:1.6rem}
+.skill h3{font-size:1.05rem;margin:8px 0 8px}
+.ex{color:var(--mut);font-size:.9rem;max-height:0;opacity:0;margin:0;transition:max-height .35s,opacity .3s,margin .3s}
+.skill:hover .ex,.skill:focus .ex{max-height:120px;opacity:1;margin-top:12px}
+h3.sec{margin:44px 0 16px;font-size:1.2rem}
+/* internship + projects */
+.split{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+@media(max-width:700px){.split{grid-template-columns:1fr}}
+.pj{display:flex;flex-direction:column;gap:12px}
+.pj h3{font-size:1.35rem}
+.pj p{margin:0;color:var(--mut)}
+.pj b{color:var(--tx)}
+.pj ul{margin:0;padding-left:18px;color:var(--mut)}
+.pj .row{margin-top:auto;padding-top:8px}
+.add{border-style:dashed;text-align:center;display:grid;place-content:center;gap:6px;color:var(--mut);min-height:160px;margin-top:18px}
+/* achievements / training */
+.ach small,.cert small{color:var(--a);font-weight:700}
+.ach h3,.cert h3{font-size:1.05rem;margin:6px 0}
+.ach p,.cert p{margin:0;color:var(--mut);font-size:.92rem}
+.ph{opacity:.6;font-style:italic}
+.editing [contenteditable]{outline:1px dashed var(--a);border-radius:6px;padding:2px 4px}
+.cert .row{margin-top:14px}
+/* contact */
+form{display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:700;font-size:.9rem}
+input,textarea{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--a);border-color:transparent}
+.contact{display:grid;gap:28px;grid-template-columns:.9fr 1.1fr}
+@media(max-width:900px){.contact{grid-template-columns:1fr}}
+.links{display:grid;gap:10px;margin-top:18px}
+footer{text-align:center;color:var(--mut);padding:30px 20px 40px;font-size:.9rem}
+/* misc */
+#top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transform:translateY(10px);z-index:40}
+#top.show{opacity:1;pointer-events:auto;transform:none}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--bg2);border:1px solid var(--a);padding:12px 18px;border-radius:12px;opacity:0;transition:.3s;z-index:90;max-width:90vw;font-size:.92rem}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+#cg{position:fixed;width:340px;height:340px;margin:-170px 0 0 -170px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 65%);pointer-events:none;z-index:-1;left:-999px;top:0}
+#ld{position:fixed;inset:0;z-index:100;display:grid;place-content:center;justify-items:center;gap:16px;background:var(--bg);transition:opacity .5s,visibility .5s}
+#ld.hide{opacity:0;visibility:hidden}
+.ring{width:54px;height:54px;border-radius:50%;border:4px solid var(--bd);border-top-color:var(--a);border-right-color:var(--b);animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}.ln{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<div id="ld" role="status" aria-live="polite"><div class="ring"></div><span class="grad" style="font:800 1rem Sora,sans-serif;letter-spacing:.1em">AMULYA RANI</span></div>
+<div id="cg" aria-hidden="true"></div>
+
+<header>
+<div class="wrap"><nav aria-label="Main">
+<a class="logo grad" href="#home">AMULYA RANI</a>
+<ul id="links">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#internships">Internships</a></li><li><a href="#projects">Projects</a></li><li><a href="#achievements">Achievements</a></li><li><a href="#training">Training</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+<button class="ib" id="theme" aria-label="Toggle dark or light mode">🌙</button>
+<button class="ib" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button>
+</nav></div>
+</header>
+
+<main>
+<section id="home"><div class="wrap hero">
+<div>
+<h1>Hi, I'm <span class="grad">Amulya Rani</span> 👋</h1>
+<p class="role">Final-Year B.Tech CSE Student | Aspiring Data Analyst</p>
+<p>I am a passionate Computer Science student interested in Data Analytics, Artificial Intelligence and modern technology. I enjoy learning new tools, building practical projects and continuously improving my technical skills.</p>
+<div class="row">
+<a class="btn p" href="#projects">View My Projects</a>
+<span id="hero-resume"></span>
+<a class="soc" data-soc="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2 3.77-2 4 0 4.77 2.6 4.77 6v5.9h-4v-5.2c0-1.25-.02-2.85-1.75-2.85s-2 1.35-2 2.75v5.3h-4z"/></svg></a>
+<a class="soc" data-soc="github" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+</div>
+</div>
+<div class="card viz" aria-label="Animated data visualisation">
+<svg viewBox="0 0 400 240" role="img" aria-label="Animated bar and line chart">
+<defs><linearGradient id="g" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#6aa7ff"/><stop offset="1" stop-color="#a866ff"/></linearGradient></defs>
+<g stroke="currentColor" opacity=".12"><path d="M15 30H385M15 90H385M15 150H385M15 210H385"/></g>
+<rect class="bar" style="--i:0" x="30" y="150" width="30" height="60" rx="6"/>
+<rect class="bar" style="--i:1" x="80" y="110" width="30" height="100" rx="6"/>
+<rect class="bar" style="--i:2" x="130" y="130" width="30" height="80" rx="6"/>
+<rect class="bar" style="--i:3" x="180" y="80" width="30" height="130" rx="6"/>
+<rect class="bar" style="--i:4" x="230" y="100" width="30" height="110" rx="6"/>
+<rect class="bar" style="--i:5" x="280" y="50" width="30" height="160" rx="6"/>
+<rect class="bar" style="--i:6" x="330" y="70" width="30" height="140" rx="6"/>
+<path class="ln" pathLength="1" d="M45 120C90 70 120 100 195 55S290 30 345 22"/>
+<circle class="dot" cx="345" cy="22" r="6"/>
+</svg>
+<div class="chips" aria-label="Focus areas">
+<span class="chip" style="--i:0">🐍 Python</span><span class="chip" style="--i:1">🗄️ SQL</span><span class="chip" style="--i:2">📊 Power BI</span><span class="chip" style="--i:3">🤖 AI</span><span class="chip" style="--i:4">📈 Analytics</span>
+</div>
+</div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2 class="rv">About me</h2>
+<p class="sub rv">Student, learner, builder: working toward a career in data and technology.</p>
+<div class="about">
+<div class="card rv">
+<dl><dt>Name</dt><dd>Amulya Rani</dd><dt>Education</dt><dd>B.Tech, Computer Science and Engineering</dd><dt>College</dt><dd>KHIT College</dd><dt>Location</dt><dd>Ongole, Andhra Pradesh</dd><dt>Career interest</dt><dd>Data Analytics, AI and IT</dd></dl>
+<p style="color:var(--mut);margin:20px 0 0">I am a final-year B.Tech Computer Science Engineering student who is passionate about technology, data and continuous learning. I am currently developing my skills in Python, SQL, Excel, Power BI and AI tools. My goal is to start my career in an MNC where I can apply my knowledge, learn from experienced professionals and grow as a technology professional.</p>
+</div>
+<div class="card rv"><h3 style="margin-bottom:18px">My journey</h3>
+<ol class="tl"><li>B.Tech CSE</li><li>Technical skill development</li><li>Internship experience</li><li>Practical projects</li><li>Career goal</li></ol></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2 class="rv">Skills</h2>
+<p class="sub rv">Hover, tap or focus a card to see how I use or am learning each skill.</p>
+<div class="grid rv" id="tech"></div>
+<h3 class="sec rv">Soft skills</h3>
+<div class="grid rv" id="soft"></div>
+</div></section>
+
+<section id="internships"><div class="wrap">
+<h2 class="rv">Internships</h2>
+<p class="sub rv">Hands-on learning in AI and enterprise workflows.</p>
+<article class="card rv">
+<h3>SmartBridge Internship</h3>
+<p style="color:var(--a);font-weight:700;margin:4px 0 16px">Artificial Intelligence &amp; ServiceNow Administration</p>
+<dl><dt>Organization</dt><dd>SmartBridge</dd><dt>Domain</dt><dd>Artificial Intelligence and ServiceNow Administration</dd><dt>Experience</dt><dd>Training and practical learning</dd><dt>Skills / concepts</dt><dd>AI concepts, ServiceNow Administration, Service Portal</dd></dl>
+<div class="row" id="cert-sb"></div>
+</article>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2 class="rv">Projects</h2>
+<p class="sub rv">Practical things I have built while learning.</p>
+<div class="split" id="pj"></div>
+<div class="card add rv"><strong>More projects coming</strong><span>Add a new entry to the <code>PROJECTS</code> list in the page script and it appears here.</span></div>
+</div></section>
+
+<section id="achievements"><div class="wrap">
+<h2 class="rv">Achievements</h2>
+<p class="sub rv">Only real, provided items are filled in. Use Edit cards to write your own, or Add achievement for more.</p>
+<div class="row" style="margin:0 0 20px"><button class="btn sm" id="edit" aria-pressed="false">✏️ Edit cards</button><button class="btn sm" id="addA">+ Add achievement</button></div>
+<div class="grid rv" id="ach"></div>
+</div></section>
+
+<section id="training"><div class="wrap">
+<h2 class="rv">Training &amp; certifications</h2>
+<p class="sub rv">Learning areas I am working through. Add organisation names and certificate links in the script when ready.</p>
+<div class="grid rv" id="trn"></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2 class="rv">Let's connect 🤝</h2>
+<p class="sub rv">I am open to internships, entry-level opportunities, projects and professional connections.</p>
+<div class="contact">
+<div class="card rv"><h3>Get in touch</h3>
+<div class="links"><a class="btn" id="mail" href="#">✉️ Email</a><a class="btn" data-soc="linkedin" target="_blank" rel="noopener">💼 LinkedIn</a><a class="btn" data-soc="github" target="_blank" rel="noopener">💻 GitHub</a><span id="contact-resume"></span></div></div>
+<form class="card rv" id="cf">
+<label>Name<input name="n" required autocomplete="name"></label>
+<label>Email<input name="e" type="email" required autocomplete="email"></label>
+<label>Message<textarea name="m" rows="5" required></textarea></label>
+<button class="btn p" type="submit">Send message</button>
+<small id="fs" role="status" style="color:var(--mut)"></small>
+</form>
+</div></div></section>
+</main>
+<footer>© <span id="yr"></span> Amulya Rani · B.Tech CSE, KHIT College</footer>
+<button class="ib" id="top" aria-label="Back to top">↑</button>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ============ EDIT YOUR CONTENT HERE ============ */
+const CONFIG={
+  email:"your.email@example.com",                     // replace with your email
+  linkedin:"https://www.linkedin.com/in/your-profile", // replace with your LinkedIn URL
+  github:"https://github.com/tamulya567-maker",
+  links:{resume:"",cert_sb:"",cert_servicenow:"",cert_ai:"",cert_salesforce:"",cert_quantum:"",cert_other:""} // paste file/URL for each certificate or resume
+};
+const TECH=[
+ ["🐍","Python","Learning","Learning to write scripts for cleaning and analysing data."],
+ ["🗄️","SQL","Learning","Learning to query and organise data in databases."],
+ ["📗","Microsoft Excel","Practical Exposure","Using it to organise, calculate and summarise data."],
+ ["📊","Power BI","Learning","Learning to turn data into dashboards and visual reports."],
+ ["🤖","AI Tools","Practical Exposure","Exploring AI concepts and tools through training and projects."],
+ ["🧩","ServiceNow","Practical Exposure","Administration and Service Portal work from my internship and a booking project."]];
+const SOFT=[
+ ["💬","Communication","Explaining ideas clearly, in writing and in person."],
+ ["🤝","Teamwork","Working with others on projects and learning together."],
+ ["⏱️","Time Management","Balancing studies, training and projects."],
+ ["🧠","Problem Solving","Breaking a problem into steps and testing solutions."],
+ ["🌱","Continuous Learning","Regularly picking up new tools and concepts."]];
+const PROJECTS=[
+ {t:"Smart Fitness & Diet Planner",d:"An interactive web application designed to provide simple fitness routines and diet guidance in an easy-to-understand format.",
+  f:["Fitness routine guidance","Diet planning","Beginner-friendly recommendations","Simple user interaction","Clean and responsive interface"],
+  demo:"https://ai-smartfitnessanddiet.lovable.app",gh:"https://github.com/tamulya567-maker/ai-smartfitnessanddiet.git"},
+ {t:"Sports Hall Booking System",d:"A ServiceNow-based project designed to simplify sports hall booking through a Service Portal.",
+  problem:"Booking a sports hall needs a simple, clear process.",solution:"A Service Portal where users can make sports hall bookings.",
+  tech:"ServiceNow, Service Portal",f:["Built on ServiceNow","Service Portal interface for bookings"]}];
+const ACH=[
+ ["Certifications","🎓","SmartBridge internship certificate","AI & ServiceNow Administration"],
+ ["Hackathons","🏆","Add your hackathon here","",1],
+ ["Technical","💡","Add a technical achievement","",1],
+ ["Academic","📚","Add an academic achievement","",1],
+ ["Project","🚀","Smart Fitness & Diet Planner is live online","Deployed and shareable as a web app"]];
+const TRAIN=[
+ ["ServiceNow Training","ServiceNow Administration, Service Portal","cert_servicenow"],
+ ["Artificial Intelligence / AI & ML","AI and machine learning concepts","cert_ai"],
+ ["Salesforce / Agentforce","Salesforce, Agentforce","cert_salesforce"],
+ ["Quantum Fundamentals","Quantum computing basics","cert_quantum"],
+ ["Other workshops & courses","Add topics","cert_other"]];
+/* ================================================ */
+const $=s=>document.querySelector(s),L=CONFIG.links;
+const btn=(k,label,cls="")=>`<a class="btn ${cls}" href="${L[k]||"#"}" data-k="${k}" ${L[k]?'target="_blank" rel="noopener"':""}>${label}</a>`;
+const toast=m=>{const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.i);toast.i=setTimeout(()=>t.classList.remove("show"),3200)};
+$("#hero-resume").outerHTML=btn("resume","⬇ Download Resume");
+$("#contact-resume").outerHTML=btn("resume","⬇ Download Resume","p");
+$("#cert-sb").innerHTML=btn("cert_sb","View Certificate");
+document.querySelectorAll("[data-soc]").forEach(a=>a.href=CONFIG[a.dataset.soc]);
+$("#mail").href="mailto:"+CONFIG.email;$("#yr").textContent=new Date().getFullYear();
+$("#tech").innerHTML=TECH.map(s=>`<article class="card skill" tabindex="0"><span class="ic">${s[0]}</span><h3>${s[1]}</h3><span class="tag">${s[2]}</span><p class="ex">${s[3]}</p></article>`).join("");
+$("#soft").innerHTML=SOFT.map(s=>`<article class="card skill" tabindex="0"><span class="ic">${s[0]}</span><h3>${s[1]}</h3><p class="ex">${s[2]}</p></article>`).join("");
+$("#pj").innerHTML=PROJECTS.map((p,i)=>`<article class="card pj rv"><span class="tag" style="align-self:start">Project ${i+1}</span><h3>${p.t}</h3><p>${p.d}</p>
+${p.problem?`<p><b>Problem:</b> ${p.problem}</p><p><b>Solution:</b> ${p.solution}</p><p><b>Technology:</b> ${p.tech}</p>`:""}
+<div><b>Key features</b><ul>${p.f.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+${p.demo?`<div class="row"><a class="btn p sm" href="${p.demo}" target="_blank" rel="noopener">Live Demo</a><a class="btn sm" href="${p.gh}" target="_blank" rel="noopener">GitHub</a></div>`:""}</article>`).join("");
+const achCard=a=>`<article class="card ach"><small>${a[0]}</small><h3 class="${a[4]?"ph":""}">${a[1]} ${a[2]}</h3><p>${a[3]}</p></article>`;
+$("#ach").innerHTML=ACH.map(achCard).join("");
+$("#edit").onclick=e=>{const on=$("#ach").classList.toggle("editing");e.target.setAttribute("aria-pressed",on);e.target.textContent=on?"✅ Done editing":"✏️ Edit cards";$("#ach").querySelectorAll("h3,p").forEach(x=>{x.contentEditable=on;x.classList.remove("ph")});if(on)toast("Edits stay in this browser session. Update ACH in the script to save them.")};
+$("#addA").onclick=()=>{$("#ach").insertAdjacentHTML("beforeend",achCard(["New","⭐","Click Edit cards to write this achievement","Add details"]));$("#ach").lastElementChild.querySelector("h3").classList.add("ph")};
+$("#trn").innerHTML=TRAIN.map(t=>`<article class="card cert"><small>🎖️ Certificate</small><h3>${t[0]}</h3><p class="ph">Organisation: add name</p><p style="margin-top:6px">Topics: ${t[1]}</p><div class="row">${btn(t[2],"View Certificate","sm")}</div></article>`).join("");
+document.addEventListener("click",e=>{const a=e.target.closest("a[data-k]");if(a&&!L[a.dataset.k]){e.preventDefault();toast("Link not added yet. Paste it into CONFIG.links in the script.")}});
+$("#cf").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent("Portfolio message from "+f.get("n"))}&body=${encodeURIComponent(f.get("m")+"\n\nFrom: "+f.get("n")+" ("+f.get("e")+")")}`;$("#fs").textContent="Opening your email app with the message ready to send."};
+/* theme */
+const root=document.documentElement,tb=$("#theme");
+const setT=t=>{root.dataset.theme=t;tb.textContent=t==="dark"?"🌙":"☀️"};
+let saved;try{saved=localStorage.getItem("theme")}catch(e){}setT(saved||"dark");
+tb.onclick=()=>{const t=root.dataset.theme==="dark"?"light":"dark";setT(t);try{localStorage.setItem("theme",t)}catch(e){}};
+/* mobile menu */
+const mb=$("#menu"),ul=$("#links");
+mb.onclick=()=>{const o=ul.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+ul.onclick=e=>{if(e.target.tagName==="A"){ul.classList.remove("open");mb.setAttribute("aria-expanded",false)}};
+/* reveal, back-to-top, spotlight, loader */
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(x=>io.observe(x));
+addEventListener("scroll",()=>$("#top").classList.toggle("show",scrollY>600),{passive:true});
+$("#top").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+addEventListener("pointermove",e=>{const c=e.target.closest&&e.target.closest(".card");if(c){const r=c.getBoundingClientRect();c.style.setProperty("--mx",e.clientX-r.left+"px");c.style.setProperty("--my",e.clientY-r.top+"px")}
+ if(e.pointerType==="mouse"){const g=$("#cg");g.style.left=e.clientX+"px";g.style.top=e.clientY+"px"}});
+const hide=()=>$("#ld").classList.add("hide");
+addEventListener("load",()=>setTimeout(hide,500));setTimeout(hide,2500);
+</script>
+</body>
+</html>
